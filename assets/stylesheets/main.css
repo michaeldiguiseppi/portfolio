@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  font-family: palatino linotype;
+  background-color: #D1D1D1;
+}
+body#index {
+   background-image: url('../images/background.jpg');
+   background-size: 1500px;
+   background-position: top;
+}
+
+ul.indented {
+  list-style-type: disc;
+}
+
+div {
+  margin: 25px;
+}
+
+div.floater {
+  font-size: 1.5em;
+  float: left;
+}
+
+p.goals-list {
+  font-size: 2.1em;
+}
+
+.menu-bar {
+  background-color: #3C4248;
+  color: white;
+}
+
+.menu-bar > a {
+  color: white;
+}
+
+a.top {
+	padding: 5px 10px;
+	background-color: #B5BABA;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+a.geek {
+  text-decoration: underline;
+  color: black;
+}
+
+
+a.geek:hover {
+  color: lime;
+}
+
+a.left {
+	float: left;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+a.right	{
+	float: right;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+header {
+	text-align: center;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.none {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.goals-list {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.float-left {
+  float: left;
+  font-size: 2em;
+}
+
+#nav-bar {
+  visibility: hidden;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  height: 50px;
+  width: 400px;
+}
+
+li.bullet {
+  list-style-type: upper-roman;
+  margin-left: 25px;
+}
+
+li.up {
+  display: inline-block;
+  text-align: center;
+}
+
+li.indented {
+  margin-bottom: 1.5em;
+}
+
+.top {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #941BCC;
+  background-color: #B5BABA;
+  border-radius: 5px;
+}
+
+.top:hover {
+  background-color: #52DCDE;
+  border-radius: 5px;
+
+}
+
+#gif {
+  margin-top: 10px;
+  margin-left: 605px;
+}
+
+#btn {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  vertical-align: center;
+  height: 95px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 15px;
+  padding-top: 7px;
+}
+#btn:hover {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+#details {
+  text-align: center;
+  display: block;
+  float: right;
+  width: 10%;
+  font-size: 2.5em;
+  padding: 13px;
+  padding-left: 75px;
+  margin-right: -75px;
+}
+
+#messages {
+  display: inline-block;
+  text-align: center;
+  float: left;
+  width: 20%;
+  font-size: 2.5em;
+  padding: 13px;
+  padding-bottom: 0px;
+
+}
+
+.image {
+  padding: 10px;
+}
+
+img.geek {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 94%;
+  margin: 40px;
+}
+
+.post {
+  background-color: #B5BABA;
+  border: 5px;
+  border-radius: 25px;
+  margin-left: 40px;
+  height: auto;
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+}
+
+.blue {
+  background-color: blue;
+  text-align: right;
+  width: 50%;
+  margin: 40px;
+}
+
+td.left {
+  text-align: left;
+
+}
+
+td.right {
+  text-align: right;
+}
+
+
+div#back {
+  font-size: 2.5em;
+  margin-left: 400px;
+}
+
+img#center {
+  display: inline-block;
+  padding-left: 35%;
+  height: 400px;
+  width: 400px;
+}
+
+img#phone-top {
+  float: right;
+  display: block;
+  margin-top: -35px;
+}
+
+#block1 {
+  background-image: url('../images/racing3.png');
+}
+
+#block2 {
+  background-image: url('../images/lichKing.jpg');
+}
+
+#block3 {
+  background-image: url('../images/myBand.jpg');
+}
+
+#block4 {
+  background-image: url('../images/innards.jpg');
+}
+
+#block5 {
+  background-image: url('../images/twitch-tv-logo.jpg');
+}
+
+.block {
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin-left: 100px;
+
+  border-radius: 15px;
+}
+
+.icon {
+  border-radius: 15px;
+  padding: 0;
+}
+
+#time {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
