@@ -40,21 +40,20 @@ table {
   border-spacing: 0;
 }
 
+/******************************/
+/* General site-wide settings */
+/******************************/
 
 body {
   font-family: palatino linotype;
   background-color: #D1D1D1;
 }
-body#index {
-   background-image: url('../images/background.jpg');
-   top: 0;
-   bottom: 0;
-   background-position: top;
-}
 
-ul.indented {
-  list-style-type: disc;
-}
+
+/*****************************************************************************************/
+
+/*****************************************************************************************/
+
 
 div {
   margin: 25px;
@@ -65,9 +64,7 @@ div.floater {
   float: left;
 }
 
-p.goals-list {
-  font-size: 2.1em;
-}
+
 
 .menu-bar {
   background-color: #3C4248;
@@ -95,6 +92,14 @@ a.geek:hover {
   color: lime;
 }
 
+
+
+/***********************************************************************/
+/* This section creates the navigation buttons at the top of each page */
+/***********************************************************************/
+
+
+
 a.left {
 	float: left;
   background-color: #D1D1D1;
@@ -111,10 +116,22 @@ a.right	{
   padding: 5px;
 }
 
+
+/***************************************************************************************************/
+/* This section creates the header at the top, including the clock, battery, and audio (on page 2) */
+/***************************************************************************************************/
+
 header {
   padding-top: 5px;
   padding-bottom: 1px;
   height: 200px;
+}
+
+audio {
+  position: absolute;
+  top: 150px;
+  right: 40%;
+  left: 40%;
 }
 
 h1 {
@@ -122,66 +139,21 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#time {
+  margin: auto;
 }
 
-.none {
-  list-style-type: none;
-  text-align: center;
-  margin: 0 auto;
-  visibility: hidden;
+img#phone-top {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 
-.goals-list {
-  list-style-type: none;
-  padding-top: 50px;
-}
 
-.float-left {
-  float: left;
-  font-size: 2em;
-}
 
-li.bullet {
-  list-style-type: upper-roman;
-  margin-left: 25px;
-}
-
-li.up {
-  display: inline-block;
-  text-align: center;
-}
-
-li.indented {
-  margin-bottom: 1.5em;
-}
-
-#gif {
-  margin-top: 10px;
-  margin-left: 605px;
-}
-
-#btn {
-  margin: 0 auto;
-  margin-top: 15px;
-  text-align: center;
-  height: 95px;
-  width: 200px;
-  background-color: aqua;
-  border-radius: 15px;
-  padding-top: 7px;
-}
-#btn:hover {
-  background-color: blue;
-}
-
-.hidden {
-  display: none;
-}
+/*******************************************************************************/
+/* This section creates the styling of the buttons at the bottom of the header */
+/*******************************************************************************/
 
 #details {
   text-align: center;
@@ -201,68 +173,27 @@ li.indented {
   padding: 13px;
   left: 0;
   top: 100px;
-
-}
-
-.image {
-  padding: 10px;
-}
-
-img.geek {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-table {
-  width: 94%;
-  margin: 40px;
-}
-
-.post {
-  background-color: #B5BABA;
-  border: 5px;
-  border-radius: 25px;
-  margin-left: 40px;
-  height: auto;
-  padding: 20px;
-  width: 50%;
-  text-align: left;
-}
-
-.blue {
-  background-color: blue;
-  text-align: right;
-  width: 50%;
-  margin: 40px;
-}
-
-td.left {
-  text-align: left;
-
-}
-
-td.right {
-  text-align: right;
 }
 
 
-div#back {
-  font-size: 2.5em;
-  margin-left: 400px;
+/*---------------------------------------------------Page 1----------------------------------------------------------*/
+
+/*************************************************************/
+/*This section creates the background of the index.html page */
+/*************************************************************/
+
+
+body#index {
+   background-image: url('../images/background.jpg');
+   top: 0;
+   bottom: 0;
+   background-position: top;
 }
 
-img#center {
-  display: inline-block;
-  padding-left: 35%;
-  height: 400px;
-  width: 400px;
-}
 
-img#phone-top {
-  position: absolute;
-  right: 20px;
-  top: 0;
-}
+/******************************************************************/
+/*This section creates the app-like center of the index.html page */
+/******************************************************************/
 
 #block1 {
   background-image: url('../images/racing3.png');
@@ -299,7 +230,128 @@ img#phone-top {
   transform: rotateY(-180deg);
 }
 
+/*---------------------------------------------------Page 2----------------------------------------------------------*/
 
-#time {
-  margin: auto;
+/********************************************************/
+/* This section creates the message structure on page 2 */
+/********************************************************/
+
+article {
+  box-sizing: border-box;
+  position: relative;
+  width: 48%;
+  padding: 25px;
+  border-radius: 15px;
 }
+
+article:nth-child(2n) {
+  background-color: blue;
+  right: 0;
+  left: 50%;
+}
+
+article:nth-child(2n+1) {
+  background-color: #C0C0C0;
+  left: 2%;
+}
+
+section {
+  padding-top: 2%;
+}
+
+
+/********************************************************************/
+/* This section creates the gif's at the top and bottom of the page */
+/********************************************************************/
+
+
+#gif {
+  margin-top: 10px;
+  margin-left: 605px;
+}
+
+#btn {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  height: 95px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 15px;
+  padding-top: 7px;
+}
+#btn:hover {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/*********************************************/
+/* This section formats the images on page 2 */
+/*********************************************/
+
+
+.image {
+  padding: 10px;
+}
+
+img.geek {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*---------------------------------------------------Page 3----------------------------------------------------------*/
+
+
+/************************************************************************************/
+/* This section creates the goals list, including the image and video at the bottom */
+/************************************************************************************/
+
+
+.goals-list {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.float-left {
+  float: left;
+  font-size: 2em;
+}
+
+li.bullet {
+  list-style-type: upper-roman;
+  margin-left: 25px;
+}
+
+li.up {
+  display: inline-block;
+  text-align: center;
+}
+
+li.indented {
+  margin-bottom: 1.5em;
+  list-style-type: disc;
+}
+
+ul.indented {
+  
+}
+
+img#center {
+  float: right;
+  display: inline-block;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+  margin-top: -35px;
+}
+
+p.goals-list {
+  font-size: 2.1em;
+}
+
