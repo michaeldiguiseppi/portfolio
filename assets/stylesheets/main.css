@@ -47,7 +47,8 @@ body {
 }
 body#index {
    background-image: url('../images/background.jpg');
-   background-size: 1500px;
+   top: 0;
+   bottom: 0;
    background-position: top;
 }
 
@@ -111,9 +112,9 @@ a.right	{
 }
 
 header {
-	text-align: center;
   padding-top: 5px;
   padding-bottom: 1px;
+  height: 200px;
 }
 
 h1 {
@@ -145,15 +146,6 @@ h2 {
   font-size: 2em;
 }
 
-#nav-bar {
-  visibility: hidden;
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 10px;
-  height: 50px;
-  width: 400px;
-}
-
 li.bullet {
   list-style-type: upper-roman;
   margin-left: 25px;
@@ -168,21 +160,6 @@ li.indented {
   margin-bottom: 1.5em;
 }
 
-.top {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  color: #941BCC;
-  background-color: #B5BABA;
-  border-radius: 5px;
-}
-
-.top:hover {
-  background-color: #52DCDE;
-  border-radius: 5px;
-
-}
-
 #gif {
   margin-top: 10px;
   margin-left: 605px;
@@ -192,7 +169,6 @@ li.indented {
   margin: 0 auto;
   margin-top: 15px;
   text-align: center;
-  vertical-align: center;
   height: 95px;
   width: 200px;
   background-color: aqua;
@@ -210,22 +186,21 @@ li.indented {
 #details {
   text-align: center;
   display: block;
-  float: right;
-  width: 10%;
+  position: absolute;
   font-size: 2.5em;
   padding: 13px;
-  padding-left: 75px;
-  margin-right: -75px;
+  right: 0;
+  top: 100px;
 }
 
 #messages {
   display: inline-block;
   text-align: center;
-  float: left;
-  width: 20%;
+  position: absolute;
   font-size: 2.5em;
   padding: 13px;
-  padding-bottom: 0px;
+  left: 0;
+  top: 100px;
 
 }
 
@@ -284,9 +259,9 @@ img#center {
 }
 
 img#phone-top {
-  float: right;
-  display: block;
-  margin-top: -35px;
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 #block1 {
@@ -303,30 +278,28 @@ img#phone-top {
 
 #block4 {
   background-image: url('../images/innards.jpg');
-}
-
-#block5 {
-  background-image: url('../images/twitch-tv-logo.jpg');
+  cursor: pointer;
 }
 
 .block {
-  background-repeat: no-repeat;
   display: inline-block;
   height: 200px;
   width: 200px;
   margin-left: 100px;
-
   border-radius: 15px;
+  box-shadow: none;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotateY(0deg);
 }
 
-.icon {
-  border-radius: 15px;
-  padding: 0;
+.block:hover {
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotateY(-180deg);
 }
+
 
 #time {
-  display: block;
-  text-align: center;
-  width: 50%;
   margin: auto;
 }
