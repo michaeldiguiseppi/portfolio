@@ -1,3 +1,30 @@
+/**************************************/
+/*         Table of Contents          */
+/**************************************/
+/*  1. CSS Reset
+/*  2. Site-wide Settings
+/*  3. Header text
+/*  4. Header images and audio
+/*  5. Header buttons
+/*  6. Background of page 1
+/*  7. Page 1 app structure
+/*  8. Page 2 message structure
+/*  9. Page 2 link styling
+/* 10. Page 2 gifs
+/* 11. Page 2 images
+/* 12. Page 3 styling and images
+/**************************************/
+/* Cmd + F with the section to locate */
+/**************************************/
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+
+/****************/
+/* 1. CSS Reset */
+/****************/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -40,30 +67,23 @@ table {
   border-spacing: 0;
 }
 
-/******************************/
-/* General site-wide settings */
-/******************************/
+/*************************/
+/* 2. Site-wide settings */
+/*************************/
 
 body {
   font-family: palatino linotype;
   background-color: #D1D1D1;
 }
 
-
-/*****************************************************************************************/
-
-/*****************************************************************************************/
-
-
 div {
   margin: 25px;
 }
 
-div.floater {
-  font-size: 1.5em;
-  float: left;
-}
 
+/******************/
+/* 3. Header text */
+/******************/
 
 
 .menu-bar {
@@ -75,51 +95,10 @@ div.floater {
   color: white;
 }
 
-a.top {
-	padding: 5px 10px;
-	background-color: #B5BABA;
-	margin-top: 15px;
-	text-decoration: none;
-}
 
-a.geek {
-  text-decoration: underline;
-  color: black;
-}
-
-
-a.geek:hover {
-  color: lime;
-}
-
-
-
-/***********************************************************************/
-/* This section creates the navigation buttons at the top of each page */
-/***********************************************************************/
-
-
-
-a.left {
-	float: left;
-  background-color: #D1D1D1;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-}
-
-a.right	{
-	float: right;
-  background-color: #D1D1D1;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-}
-
-
-/***************************************************************************************************/
-/* This section creates the header at the top, including the clock, battery, and audio (on page 2) */
-/***************************************************************************************************/
+/******************************/
+/* 4. Header images and audio */
+/******************************/
 
 header {
   padding-top: 5px;
@@ -151,9 +130,9 @@ img#phone-top {
 
 
 
-/*******************************************************************************/
-/* This section creates the styling of the buttons at the bottom of the header */
-/*******************************************************************************/
+/*********************/
+/* 5. Header buttons */
+/*********************/
 
 #details {
   text-align: center;
@@ -175,12 +154,28 @@ img#phone-top {
   top: 100px;
 }
 
+a.left {
+  float: left;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+a.right {
+  float: right;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
 
 /*---------------------------------------------------Page 1----------------------------------------------------------*/
 
-/*************************************************************/
-/*This section creates the background of the index.html page */
-/*************************************************************/
+/***************************/
+/* 6. Background of page 1 */
+/***************************/
 
 
 body#index {
@@ -191,9 +186,9 @@ body#index {
 }
 
 
-/******************************************************************/
-/*This section creates the app-like center of the index.html page */
-/******************************************************************/
+/***************************/
+/* 7. Page 1 app structure */
+/***************************/
 
 #block1 {
   background-image: url('../images/racing3.png');
@@ -232,9 +227,13 @@ body#index {
 
 /*---------------------------------------------------Page 2----------------------------------------------------------*/
 
-/********************************************************/
-/* This section creates the message structure on page 2 */
-/********************************************************/
+/*******************************/
+/* 8. Page 2 message structure */
+/*******************************/
+
+section {
+  padding-top: 2%;
+}
 
 article {
   box-sizing: border-box;
@@ -255,14 +254,29 @@ article:nth-child(2n+1) {
   left: 2%;
 }
 
-section {
-  padding-top: 2%;
+p {
+  font-size: 1.2em;
+}
+
+/**************************/
+/* 9. Page 2 link styling */
+/**************************/
+
+
+a.geek {
+  text-decoration: underline;
+  color: black;
 }
 
 
-/********************************************************************/
-/* This section creates the gif's at the top and bottom of the page */
-/********************************************************************/
+a.geek:hover {
+  color: lime;
+}
+
+
+/*******************/
+/* 10. Page 2 gifs */
+/*******************/
 
 
 #gif {
@@ -290,9 +304,9 @@ section {
 
 
 
-/*********************************************/
-/* This section formats the images on page 2 */
-/*********************************************/
+/*********************/
+/* 11. Page 2 images */
+/*********************/
 
 
 .image {
@@ -308,9 +322,9 @@ img.geek {
 /*---------------------------------------------------Page 3----------------------------------------------------------*/
 
 
-/************************************************************************************/
-/* This section creates the goals list, including the image and video at the bottom */
-/************************************************************************************/
+/*********************************/
+/* 12. Page 3 styling and images */
+/*********************************/
 
 
 .goals-list {
@@ -354,4 +368,10 @@ img#center {
 p.goals-list {
   font-size: 2.1em;
 }
+
+div.floater {
+  font-size: 1.5em;
+  float: left;
+}
+
 
