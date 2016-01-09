@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    height: 150px;
+    width: 100%;
+}
+
+nav {
+    background-color: red;
+
+}
+
+button {
+    background-color: black;
+    height: 60px;
+    width: 120px;
+}
+
+section {
+    background-color: yellow;
+    top: 0;
+    bottom: 0;
+}
+
+article {
+    background-color: teal;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+}
+
+.overlap {
+    top: -90px;
+    left: 0;
+}
+
+.margin-40 {
+    margin: 40px;
+}
+
+article:hover {
+    height: 210px;
+    width: 210px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.pad-top {
+    padding-top: 90px;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 8px 3px darkred;
+}
+
+.inline-block {
+    display: inline-block;
+}

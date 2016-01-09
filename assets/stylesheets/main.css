@@ -1,3 +1,30 @@
+/**************************************/
+/*         Table of Contents          */
+/**************************************/
+/*  1. CSS Reset
+/*  2. Site-wide Settings
+/*  3. Header text
+/*  4. Header images and audio
+/*  5. Header buttons
+/*  6. Background of page 1
+/*  7. Page 1 app structure
+/*  8. Page 2 message structure
+/*  9. Page 2 link styling
+/* 10. Page 2 gifs
+/* 11. Page 2 images
+/* 12. Page 3 styling and images
+/**************************************/
+/* Cmd + F with the section to locate */
+/**************************************/
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+
+/****************/
+/* 1. CSS Reset */
+/****************/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -40,33 +67,24 @@ table {
   border-spacing: 0;
 }
 
+/*************************/
+/* 2. Site-wide settings */
+/*************************/
 
 body {
   font-family: palatino linotype;
   background-color: #D1D1D1;
-}
-body#index {
-   background-image: url('../images/background.jpg');
-   background-size: 1500px;
-   background-position: top;
-}
-
-ul.indented {
-  list-style-type: disc;
 }
 
 div {
   margin: 25px;
 }
 
-div.floater {
-  font-size: 1.5em;
-  float: left;
-}
 
-p.goals-list {
-  font-size: 2.1em;
-}
+/******************/
+/* 3. Header text */
+/******************/
+
 
 .menu-bar {
   background-color: #3C4248;
@@ -77,43 +95,22 @@ p.goals-list {
   color: white;
 }
 
-a.top {
-	padding: 5px 10px;
-	background-color: #B5BABA;
-	margin-top: 15px;
-	text-decoration: none;
-}
 
-a.geek {
-  text-decoration: underline;
-  color: black;
-}
-
-
-a.geek:hover {
-  color: lime;
-}
-
-a.left {
-	float: left;
-  background-color: #D1D1D1;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-}
-
-a.right	{
-	float: right;
-  background-color: #D1D1D1;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-}
+/******************************/
+/* 4. Header images and audio */
+/******************************/
 
 header {
-	text-align: center;
   padding-top: 5px;
   padding-bottom: 1px;
+  height: 200px;
+}
+
+audio {
+  position: absolute;
+  top: 150px;
+  right: 40%;
+  left: 40%;
 }
 
 h1 {
@@ -121,173 +118,77 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#time {
+  margin: auto;
 }
 
-.none {
-  list-style-type: none;
-  text-align: center;
-  margin: 0 auto;
-  visibility: hidden;
+img#phone-top {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 
-.goals-list {
-  list-style-type: none;
-  padding-top: 50px;
-}
 
-.float-left {
-  float: left;
-  font-size: 2em;
-}
 
-#nav-bar {
-  visibility: hidden;
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 10px;
-  height: 50px;
-  width: 400px;
-}
-
-li.bullet {
-  list-style-type: upper-roman;
-  margin-left: 25px;
-}
-
-li.up {
-  display: inline-block;
-  text-align: center;
-}
-
-li.indented {
-  margin-bottom: 1.5em;
-}
-
-.top {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  color: #941BCC;
-  background-color: #B5BABA;
-  border-radius: 5px;
-}
-
-.top:hover {
-  background-color: #52DCDE;
-  border-radius: 5px;
-
-}
-
-#gif {
-  margin-top: 10px;
-  margin-left: 605px;
-}
-
-#btn {
-  margin: 0 auto;
-  margin-top: 15px;
-  text-align: center;
-  vertical-align: center;
-  height: 95px;
-  width: 200px;
-  background-color: aqua;
-  border-radius: 15px;
-  padding-top: 7px;
-}
-#btn:hover {
-  background-color: blue;
-}
-
-.hidden {
-  display: none;
-}
+/*********************/
+/* 5. Header buttons */
+/*********************/
 
 #details {
   text-align: center;
   display: block;
-  float: right;
-  width: 10%;
+  position: absolute;
   font-size: 2.5em;
   padding: 13px;
-  padding-left: 75px;
-  margin-right: -75px;
+  right: 0;
+  top: 100px;
 }
 
 #messages {
   display: inline-block;
   text-align: center;
-  float: left;
-  width: 20%;
+  position: absolute;
   font-size: 2.5em;
   padding: 13px;
-  padding-bottom: 0px;
-
+  left: 0;
+  top: 100px;
 }
 
-.image {
-  padding: 10px;
+a.left {
+  float: left;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 
-img.geek {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-table {
-  width: 94%;
-  margin: 40px;
-}
-
-.post {
-  background-color: #B5BABA;
-  border: 5px;
-  border-radius: 25px;
-  margin-left: 40px;
-  height: auto;
-  padding: 20px;
-  width: 50%;
-  text-align: left;
-}
-
-.blue {
-  background-color: blue;
-  text-align: right;
-  width: 50%;
-  margin: 40px;
-}
-
-td.left {
-  text-align: left;
-
-}
-
-td.right {
-  text-align: right;
-}
-
-
-div#back {
-  font-size: 2.5em;
-  margin-left: 400px;
-}
-
-img#center {
-  display: inline-block;
-  padding-left: 35%;
-  height: 400px;
-  width: 400px;
-}
-
-img#phone-top {
+a.right {
   float: right;
-  display: block;
-  margin-top: -35px;
+  background-color: #D1D1D1;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
+
+
+/*---------------------------------------------------Page 1----------------------------------------------------------*/
+
+/***************************/
+/* 6. Background of page 1 */
+/***************************/
+
+
+body#index {
+   background-image: url('../images/background.jpg');
+   top: 0;
+   bottom: 0;
+   background-position: top;
+}
+
+
+/***************************/
+/* 7. Page 1 app structure */
+/***************************/
 
 #block1 {
   background-image: url('../images/racing3.png');
@@ -303,30 +204,174 @@ img#phone-top {
 
 #block4 {
   background-image: url('../images/innards.jpg');
-}
-
-#block5 {
-  background-image: url('../images/twitch-tv-logo.jpg');
+  cursor: pointer;
 }
 
 .block {
-  background-repeat: no-repeat;
   display: inline-block;
   height: 200px;
   width: 200px;
   margin-left: 100px;
+  border-radius: 15px;
+  box-shadow: none;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotateY(0deg);
+}
 
+.block:hover {
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotateY(-180deg);
+}
+
+/*---------------------------------------------------Page 2----------------------------------------------------------*/
+
+/*******************************/
+/* 8. Page 2 message structure */
+/*******************************/
+
+section {
+  padding-top: 2%;
+}
+
+article {
+  box-sizing: border-box;
+  position: relative;
+  width: 48%;
+  padding: 25px;
   border-radius: 15px;
 }
 
-.icon {
-  border-radius: 15px;
-  padding: 0;
+article:nth-child(2n) {
+  background-color: blue;
+  right: 0;
+  left: 50%;
 }
 
-#time {
-  display: block;
+article:nth-child(2n+1) {
+  background-color: #C0C0C0;
+  left: 2%;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/**************************/
+/* 9. Page 2 link styling */
+/**************************/
+
+
+a.geek {
+  text-decoration: underline;
+  color: black;
+}
+
+
+a.geek:hover {
+  color: lime;
+}
+
+
+/*******************/
+/* 10. Page 2 gifs */
+/*******************/
+
+
+#gif {
+  margin-top: 10px;
+  margin-left: 605px;
+}
+
+#btn {
+  margin: 0 auto;
+  margin-top: 15px;
   text-align: center;
-  width: 50%;
-  margin: auto;
+  height: 95px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 15px;
+  padding-top: 7px;
 }
+#btn:hover {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/*********************/
+/* 11. Page 2 images */
+/*********************/
+
+
+.image {
+  padding: 10px;
+}
+
+img.geek {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*---------------------------------------------------Page 3----------------------------------------------------------*/
+
+
+/*********************************/
+/* 12. Page 3 styling and images */
+/*********************************/
+
+
+.goals-list {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.float-left {
+  float: left;
+  font-size: 2em;
+}
+
+li.bullet {
+  list-style-type: upper-roman;
+  margin-left: 25px;
+}
+
+li.up {
+  display: inline-block;
+  text-align: center;
+}
+
+li.indented {
+  margin-bottom: 1.5em;
+  list-style-type: disc;
+}
+
+ul.indented {
+  
+}
+
+img#center {
+  float: right;
+  display: inline-block;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+  margin-top: -35px;
+}
+
+p.goals-list {
+  font-size: 2.1em;
+}
+
+div.floater {
+  font-size: 1.5em;
+  float: left;
+}
+
+
