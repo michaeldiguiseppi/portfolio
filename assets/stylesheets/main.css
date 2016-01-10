@@ -70,9 +70,13 @@ table {
 /*************************/
 /* 2. Site-wide settings */
 /*************************/
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../fonts/SanFran/SanFranUltra.ttf);
+}
 
 body {
-  font-family: palatino linotype;
+  font-family: SanFrancisco;
   background-color: #D1D1D1;
 }
 
@@ -244,9 +248,10 @@ article {
 }
 
 article:nth-child(2n) {
-  background-color: blue;
+  background-color: #007AFF;
   right: 0;
   left: 50%;
+  color: white;
 }
 
 article:nth-child(2n+1) {
@@ -265,7 +270,7 @@ p {
 
 a.geek {
   text-decoration: underline;
-  color: black;
+  color: white;
 }
 
 
