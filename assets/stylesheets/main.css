@@ -70,9 +70,13 @@ table {
 /*************************/
 /* 2. Site-wide settings */
 /*************************/
+@font-face {
+  font-family: SanFrancisco;
+  src: url(../fonts/SanFran/SanFranUltra.ttf);
+}
 
 body {
-  font-family: palatino linotype;
+  font-family: SanFrancisco;
   background-color: #D1D1D1;
 }
 
@@ -244,9 +248,10 @@ article {
 }
 
 article:nth-child(2n) {
-  background-color: blue;
+  background-color: #007AFF;
   right: 0;
   left: 50%;
+  color: white;
 }
 
 article:nth-child(2n+1) {
@@ -265,7 +270,7 @@ p {
 
 a.geek {
   text-decoration: underline;
-  color: black;
+  color: white;
 }
 
 
@@ -327,19 +332,12 @@ img.geek {
 /*********************************/
 
 
-.goals-list {
-  list-style-type: none;
-  padding-top: 50px;
+.margin {
+  margin: 2% 2% 5% 2%;
 }
 
-.float-left {
-  float: left;
+.font-2 {
   font-size: 2em;
-}
-
-li.bullet {
-  list-style-type: upper-roman;
-  margin-left: 25px;
 }
 
 li.up {
@@ -350,10 +348,7 @@ li.up {
 li.indented {
   margin-bottom: 1.5em;
   list-style-type: disc;
-}
-
-ul.indented {
-  
+  margin-left: 5%;
 }
 
 img#center {
@@ -365,13 +360,9 @@ img#center {
   margin-top: -35px;
 }
 
-p.goals-list {
-  font-size: 2.1em;
-}
-
-div.floater {
+.list {
   font-size: 1.5em;
-  float: left;
+  margin-bottom: 5%;
 }
 
 
